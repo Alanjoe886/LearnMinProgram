@@ -5,7 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name: 'Alan',
+    age: 18,
+    students: [
+      {id: 1, name: 'zs', age: 20},
+      {id: 2, name: 'ls', age: 20},
+      {id: 3, name: 'ww', age: 20},
+      {id: 4, name: 'zl', age: 20}
+    ],
+    count: 0
+  },
 
+  add() {
+    // console.log('点击了+')
+    this.setData({
+      count: this.data.count + 1
+    })
+  },
+  sub() {
+    this.setData({
+      count: this.data.count - 1
+    })
   },
 
   /**
