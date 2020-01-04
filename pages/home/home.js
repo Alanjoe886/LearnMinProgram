@@ -1,18 +1,35 @@
 // pages/home/home.js
+// getApp()获取App产生的实例对象
+const app = getApp()
+console.log(app.globalData)
+const name = app.globalData.name
+const age = app.globalData.age
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    name,
+    age,
+    list: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log('onload')
+    wx.request({
+      url: 'http://jsonplaceholder.typicode.com/users',
+      success: (res) => {
+        console.log(res)
+        this.setData({
+          list: res.data
+        })
+      }
+    })
   },
 
   /**
@@ -40,14 +57,14 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log('下拉刷新')
   },
 
   /**

@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
+<text class="title">Hello {{name}}---{{age}}</text>
+
+<view wx:for="{{list}}">{{item.name}}</view>
