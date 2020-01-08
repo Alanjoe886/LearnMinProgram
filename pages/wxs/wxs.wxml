@@ -1,0 +1,21 @@
+<!-- wxs的定义方式 -->
+<!-- <wxs module="info">
+  var message = "Hello World";
+  var name = "Alan";
+
+  var sum = function(num1, num2) {
+    return num1 + num2
+  }
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+
+<wxs src="../../wxs/info.wxs" module="info" />
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(10, 20)}}</view>
+<view>{{info.priceFormat(12.22222, 3)}}</view>

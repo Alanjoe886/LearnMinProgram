@@ -1,0 +1,18 @@
+<!--pages/text/text.wxml-->
+<!-- 1.基本用法 -->
+<text>Helllo\n</text>
+<text>hhhh\n</text>
+
+<!--2. selectable 文本能被选中，默认是不能被选中的 -->
+<text selectable="{{true}}">EEEEE\n</text>
+<text selectable>PPPPP\n</text>
+
+<!--3.space：决定文本空格的大小 -->
+<text>Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+<text space="ensp" >Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+
+<!-- 4.decode 是否解码，默认为false -->
+<text>5 &gt; 3\n</text>z
+<text decode>5 &gt; 3\n</text>

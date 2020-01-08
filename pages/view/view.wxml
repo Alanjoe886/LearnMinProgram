@@ -1,0 +1,11 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml\n</text>
+
+<view>{{nowTime}}</view>
+
+<button bindtap="changcolor" size="mini">切换颜色</button>
+<view class="box1 {{isActive ? 'active' : ''}}">哈哈哈</view>
+
+<view wx:for="{{['abc', 'aaa', 'bbb']}}" wx:key="index">{{item}} {{index}}</view>
+
+<view wx:for="{{['abc', 'aaa', 'bbb']}}" wx:for-item="char" wx:key="index">{{char}}</view>

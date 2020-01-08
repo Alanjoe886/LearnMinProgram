@@ -1,0 +1,20 @@
+var message = "Hello World";
+var name = "Alan";
+
+var sum = function (num1, num2) {
+  return num1 + num2
+}
+
+var priceFormat = function(price, number) {
+  var number = number || 2;
+  var f_price = parseFloat(price);
+
+  return f_price.toFixed(number);
+}
+
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum,
+  priceFormat: priceFormat
+}
