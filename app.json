@@ -2,5 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "usingComponents": {
+    "m-cpn": "/components/my-cpn/my-cpn"
+  },
+  "sitemapLocation": "sitemap97.json"
 }
