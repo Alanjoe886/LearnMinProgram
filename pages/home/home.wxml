@@ -1,2 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
+
+<!-- 1.navigator页面跳转 -->
+<navigator url="/pages/detail/detail">调到详情页</navigator>
